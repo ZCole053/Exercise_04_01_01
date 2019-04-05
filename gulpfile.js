@@ -15,6 +15,7 @@ gulp.task('css', function() {
 });
 
 gulp.task('watch', function() {
+  //watch mode changes browser display as we change our code
   gulp.watch(target + 'js/**/*', ['js']);
   gulp.watch(target + 'css/*.css', ['css']);
   gulp.watch([target + '*.html',
